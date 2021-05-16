@@ -20,25 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d960777-56e3-4d01-8291-9155a1e9cb3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/UsersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserStoreRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UserIndexResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/sanctum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_12_074009_create_basic_tables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/RolesSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/UsersSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/piano-editoriale.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/piano-editoriale.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/EditorialProjectController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/SectorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AuthLoginRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/AuthLoginResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/EditorialProject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/EditorialProjectLog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Sector.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_12_074009_create_basic_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_12_074009_create_basic_tables.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +188,9 @@
       <workItem from="1620652731734" duration="2043000" />
       <workItem from="1620719126328" duration="140000" />
       <workItem from="1620803558447" duration="5530000" />
-      <workItem from="1620936896773" duration="5373000" />
+      <workItem from="1620936896773" duration="5630000" />
+      <workItem from="1620973886421" duration="7121000" />
+      <workItem from="1621178383463" duration="7228000" />
     </task>
     <servers />
   </component>
@@ -217,5 +214,9 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="865" y="341" key="NewPhpFileDialog/0.23.1440.800@0.23.1440.800" timestamp="1620804215060" />
+    <state x="678" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1621179115319">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="678" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1621179115319" />
   </component>
 </project>
