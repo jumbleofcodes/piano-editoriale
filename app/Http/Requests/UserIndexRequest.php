@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 
-class UserStoreRequest extends FormRequest
+class UserIndexRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -18,6 +18,17 @@ class UserStoreRequest extends FormRequest
     }
 
     /**
+     * Prepare inputs for validation
+     */
+    protected function prepareForValidation()
+    {
+        // Transform relations into array
+        if ($this->has('with')) {
+            $this->merge(['with' => explode(',', $this->with)]);
+        }
+    }
+
+    /**
      * Get the validation rules that apply to the request.
      *
      * @return array
@@ -25,10 +36,8 @@ class UserStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string',
-            'email' => 'sometimes|required|email|unique:users,email',
-            'role_id' => 'required|exists:roles,id',
-            'password' => 'sometimes|nullable|string',
+            'with' => 'array|nullable',
+            'text' => 'string|nullable',
         ];
     }
 }

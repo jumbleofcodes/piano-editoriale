@@ -10,6 +10,10 @@ class EditorialProjectLog extends Model
 {
     use HasFactory;
 
+    CONST ACTION_CREATE = 'CREATE';
+    CONST ACTION_UPDATE = 'UPDATE';
+    CONST ACTION_DESTROY = 'DESTROY';
+
     /**
      * The table associated with the model.
      *

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\EditorialProjectLog;
 use Carbon\Carbon;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -53,17 +54,18 @@ class CreateBasicTables extends Migration
             $table->foreign('author_id')->references('id')->on('users');
             $table->foreign('sector_id')->references('id')->on('sectors');
             $table->timestamps();
-            $table->softDeletes(); //è un campo che funge da cestino
+            $table->softDeletes();
         });
 
         Schema::create('editorial_project_logs',function (Blueprint $table){
             $table->id();
             $table->unsignedBigInteger('editorial_project_id'); // Unsigned = non può essere negativo
             $table->unsignedBigInteger('user_id');
-            $table->enum('action',['CREATE','UPDATE','DESTROY']); // Enum = enumeratore -> può avere solo tot valori prestabiliti
-            $table->dateTimeTz('created_at')->default(Carbon::now()); // dateTimeTz giorno + orario + timezone
+            $table->enum('action',[EditorialProjectLog::ACTION_CREATE,EditorialProjectLog::ACTION_UPDATE,EditorialProjectLog::ACTION_DESTROY]); // Enum = enumeratore -> può avere solo tot valori prestabiliti
+            //$table->dateTimeTz('created_at')->default(Carbon::now()); // dateTimeTz giorno + orario + timezone
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('editorial_project_id')->references('id')->on('editorial_projects')->onDelete('cascade');
+            $table->timestamps();
         });
     }
 

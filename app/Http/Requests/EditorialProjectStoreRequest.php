@@ -3,9 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Facades\Auth;
 
-class UserStoreRequest extends FormRequest
+class EditorialProjectStoreRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -14,7 +13,7 @@ class UserStoreRequest extends FormRequest
      */
     public function authorize()
     {
-        return Auth::check();
+        return Auth::check(); //per controllare che l'utente sia loggato | superfluo nel nostro caso grazie al middleware, funge da controllo aggiuntivo
     }
 
     /**
@@ -25,10 +24,9 @@ class UserStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string',
-            'email' => 'sometimes|required|email|unique:users,email',
-            'role_id' => 'required|exists:roles,id',
-            'password' => 'sometimes|nullable|string',
+            'title' => 'required|string',
+            'sector_id' => 'required|exists:sectors,id',
+            'author_id'=> 'sometimes|exists:users,id',
         ];
     }
 }
