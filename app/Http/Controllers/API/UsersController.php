@@ -126,7 +126,7 @@ class UsersController extends Controller
             $user->update($request->only(['name', 'email']));
 
             if ($request->has('role_id')) {
-                $user->roles()->sync([$request->role_id]);
+                $user->roles()->sync([$request->role_id]); //detach+attach
             }
 
             DB::commit();

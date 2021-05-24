@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\EditorialProject;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,5 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call(RolesSeeder::class);
         $this->call(UsersSeeder::class);
         $this->call(SectorsSeeder::class);
+        $this->call(EditorialProjectSeeder::class);
     }
 }

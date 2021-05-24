@@ -20,24 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d960777-56e3-4d01-8291-9155a1e9cb3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/EditorialProjectDestroyRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/EditorialProjectIndexRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/EditorialProjectShowRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/EditorialProjectStoreRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/EditorialProjectUpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/EditorialProjectLogResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/EditorialProjectResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/SectorsSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/StoreEditorialProjectLogCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/StoreEditorialProjectLogJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/EditorialProjectFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/EditorialProjectSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/EditorialProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/EditorialProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/UserIndexResource.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/EditorialProjectLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/EditorialProjectLog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_12_074009_create_basic_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_12_074009_create_basic_tables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/EditorialProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/EditorialProject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/UsersSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UsersSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +187,9 @@
       <workItem from="1620936896773" duration="5630000" />
       <workItem from="1620973886421" duration="7121000" />
       <workItem from="1621178383463" duration="7585000" />
-      <workItem from="1621257190279" duration="10053000" />
+      <workItem from="1621257190279" duration="10310000" />
+      <workItem from="1621582357151" duration="3607000" />
+      <workItem from="1621782254181" duration="6054000" />
     </task>
     <servers />
   </component>

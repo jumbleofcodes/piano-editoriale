@@ -12,7 +12,7 @@ use Illuminate\Validation\ValidationException;
 class AuthController extends Controller
 {
     /**
-     * Attempt login
+     * Attempt logingit
      *
      * @param AuthLoginRequest $request
      * @return AuthLoginResource
